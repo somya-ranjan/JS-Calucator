@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculater</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="contener">
+        <form name="formData">
+            <p id="outPut"></p>
+            <input type="text" name="display" autocomplete="off" class="inPut"> <br> <br>
+            <div class="btn">
+                <div class="firstRow">
+                    <input type="button" value="sin" onclick="sin()">
+                    <input type="button" value="cos" onclick="cos()">
+                    <input type="button" value="tan" onclick="tan()">
+                </div>
+                <div class="secondRow">
+                    <input type="button" value="AC" onclick="clean()">
+                    <input type="button" value="C" onclick="back()">
+                    <input type="button" value="=" onclick="equal()">
+                </div>
+                <div class="thirdRow">
+                    <input type="button" value="9" onclick="insertData('9')" class="num">
+                    <input type="button" value="8" onclick="insertData('8')" class="num">
+                    <input type="button" value="7" onclick="insertData('7')" class="num">
+                    <input type="button" value="+" onclick="insertData('+')" class="oper">
+                    <input type="button" value="-" onclick="insertData('-')" class="oper">
+                </div>
+                <div class="fourthRow">
+                    <input type="button" value="6" onclick="insertData('6')" class="num">
+                    <input type="button" value="5" onclick="insertData('5')" class="num">
+                    <input type="button" value="4" onclick="insertData('4')" class="num">
+                    <input type="button" value="*" onclick="insertData('*')" class="oper">
+                    <input type="button" value="/" onclick="insertData('/')" class="oper">
+                </div>
+                <div class="fifthRow">
+                    <input type="button" value="3" onclick="insertData('3')" class="num">
+                    <input type="button" value="2" onclick="insertData('2')" class="num">
+                    <input type="button" value="1" onclick="insertData('1')" class="num">
+                    <input type="button" value="^" onclick="insertData('**')" class="oper">
+                    <input type="button" value="&#8730" onclick="sqrt()" class="oper">
+                </div>
+                <div class="sixthRow">
+                    <input type="button" value="." onclick="insertData('.')" class="num">
+                    <input type="button" value="0" onclick="insertData('0')" class="num">
+                    <input type="button" value="%" onclick="per()" class="num">
+                    <input type="button" value="(" onclick="insertData('(')" class="oper">
+                    <input type="button" value=")" onclick="insertData(')')" class="oper">
+                </div>
+                <div class="seventhRow">
+                    <input type="button" value="x!" onclick="fact()" class="num">
+                    <input type="button" value="00" onclick="insertData('00')" class="num">
+                    <input type="button" value="log" onclick="log()" class="oper">
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+body{
+    height: 100vh;
+    background-image: linear-gradient(to right,rgba(0,0,0,.7),rgba(0,0,0,.7)),url("https://www.gamingtechlaw.com/wp-content/uploads/2019/10/markets-calculator-780x470.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.contener{
+    display: grid;
+    place-content: center;
+    place-items: center;
+    margin-top: 50px;
+}
+form{
+    background-color: #f1f1f1;
+    box-shadow: 0px 0px 24px 1px rgb(0 0 0 / 70%);
+    padding: 50px;
+    border-radius: 30px;
+}
+input{
+    text-align: center;
+}
+.inPut{
+    height: 50px;
+    width: 300px;
+    font-size: 24px;
+    outline: none;
+    border: 2px solid silver;
+    border-radius: 25px;
+}
+#outPut{
+    height: 30px;
+    /* background-color: tomato; */
+    margin: 0 10px 20px 0;
+    text-align: right;
+    font-size: 40px;
+    color: #ae0000;
+}
+.btn input{
+    font-size: 25px;
+    padding: 7px 15px;
+    border-radius: 50%;
+    border: none;
+    filter: drop-shadow(0 0 5px silver);
+    margin-top: 20px;
+    cursor: pointer;
+    
+}
+.firstRow, .secondRow, .thirdRow, .fourthRow,.fifthRow , .sixthRow, .seventhRow{
+    display: flex;
+    justify-content: space-between;
+}
+.firstRow input , .num{
+    border-radius: 25px;
+    padding: 7px 25px;
+}
+.firstRow input:hover{
+    background-color: #000;
+    color: #fff;
+}
+.secondRow input{
+    border-radius: 025px;
+    padding: 7px 25px;
+}
+.secondRow input:nth-child(2) ,.secondRow input:nth-child(3){
+    border-radius: 025px;
+    padding: 7px 35px;
+}
+.secondRow input:nth-child(1){
+    color: red;
+}
+.secondRow input:nth-child(1):hover{
+    background-color: red;
+    color: #fff;
+}
+.secondRow input:nth-child(2){
+    color: rgba(255, 142, 13, 0.801);
+}
+.secondRow input:nth-child(2):hover{
+    background-color: rgba(255, 142, 13, 0.801);
+    color: #fff;
+}
+.secondRow input:nth-child(3){
+    color: rgb(105, 103, 103)
+}
+.secondRow input:nth-child(3):hover{
+    background-color: silver;
+    color: #fff;
+}
+.seventhRow input:nth-child(1){
+    border-radius: 025px;
+    padding: 7px 12px;
+}
+.seventhRow input:nth-child(2){
+    border-radius: 025px;
+    padding: 7px 45px;
+}
+.seventhRow input:nth-child(3){
+    border-radius: 025px;
+    padding: 7px 30px;  
+}
+.oper{
+    color: #000;
+}
+.oper:hover{
+    background-color: #000;
+    color: #fff;
+}
+.num{
+    background-color: #ae0000;
+    color: #fff;
+}
+.num:hover{
+    background-color: #fff;
+    color: #ae0000;
+}
